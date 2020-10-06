@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/roomba/static/css/main.cb975818.chunk.css",
+    "main.js": "/roomba/static/js/main.c1ce7b78.chunk.js",
+    "main.js.map": "/roomba/static/js/main.c1ce7b78.chunk.js.map",
+    "runtime-main.js": "/roomba/static/js/runtime-main.89a47f1a.js",
+    "runtime-main.js.map": "/roomba/static/js/runtime-main.89a47f1a.js.map",
+    "static/js/2.d16ef026.chunk.js": "/roomba/static/js/2.d16ef026.chunk.js",
+    "static/js/2.d16ef026.chunk.js.map": "/roomba/static/js/2.d16ef026.chunk.js.map",
+    "index.html": "/roomba/index.html",
+    "precache-manifest.85d0efc585125e2bf8d8ffd1dc37f62d.js": "/roomba/precache-manifest.85d0efc585125e2bf8d8ffd1dc37f62d.js",
+    "service-worker.js": "/roomba/service-worker.js",
+    "static/css/main.cb975818.chunk.css.map": "/roomba/static/css/main.cb975818.chunk.css.map",
+    "static/js/2.d16ef026.chunk.js.LICENSE.txt": "/roomba/static/js/2.d16ef026.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89a47f1a.js",
+    "static/js/2.d16ef026.chunk.js",
+    "static/css/main.cb975818.chunk.css",
+    "static/js/main.c1ce7b78.chunk.js"
+  ]
+}
