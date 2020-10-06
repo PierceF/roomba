@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from "react";
+import { Record } from './components/record/record.jsx';
 import './App.css';
 
 function App() {
+  const [data, setData] = useState([]);
+
+  const handleChange = e => {
+    const reader = new FileReader();
+    reader.onload = onReaderLoad;
+    reader.readAsText(e.target.files[0]);
+  };
+
+  const onReaderLoad = (event) => {
+    const obj = JSON.parse(event.target.result);
+    setData(obj)
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Upload A Json File</h1>
+
+      <input className='ui button' type="file" onChange={handleChange} />
+      <br />
+      <Record rows={data}/>
+    </>
   );
 }
 
